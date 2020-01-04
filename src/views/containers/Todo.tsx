@@ -2,7 +2,7 @@ import { Action } from 'typescript-fsa';
 import { Dispatch } from 'redux';
 import { connect } from 'react-redux';
 import { AppState } from 'states/store';
-import todoActions from 'states/ducks/todo/actions';
+import todoActions from 'states/todo/actions';
 import Todo from '../components/Todo';
 
 const mapStateToProps = (state: AppState) => {
