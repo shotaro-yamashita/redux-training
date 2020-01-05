@@ -1,1 +1,1 @@
-export default () => null;
+export const countTodo = (todoList: string[]) => todoList.length;
