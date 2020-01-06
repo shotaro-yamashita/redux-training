@@ -4,7 +4,7 @@ import { Action } from 'typescript-fsa';
 import { AppState } from 'states/store';
 import { countTodo } from 'states/todo/selectors';
 import { addTodo, startLoadingTodoList } from 'states/todo/actions';
-import Todo from '../components/Todo';
+import Todo from 'views/components/Todo';
 
 const mapStateToProps = (state: AppState) => {
   return {
