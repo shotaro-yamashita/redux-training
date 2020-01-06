@@ -1,12 +1,15 @@
 import React from 'react';
-import Todo from './Todo';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Layout from './Layout';
 
 const App: React.FC = () => {
   return (
-    <div className="App">
-      <Todo />
-    </div>
+    <Router>
+      <div className="app">
+        <Route path="/" component={Layout} />
+      </div>
+    </Router >
   );
-}
+};
 
 export default App;

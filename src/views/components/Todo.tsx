@@ -23,6 +23,6 @@ const Todo: React.FC<Props> = (props) => {
       </ul>
     </div>
   );
-}
+};
 
 export default Todo;
