@@ -8,7 +8,7 @@ import Todo from '../components/Todo';
 
 const mapStateToProps = (state: AppState) => {
   return {
-    count: countTodo(state.todo.todoList),
+    count: countTodo(state),
     todoList: state.todo.todoList,
   }
 }
