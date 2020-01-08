@@ -11,7 +11,9 @@ const initialState: State = {
 };
 
 export default reducerWithInitialState(initialState)
-  .case(todoActions.addTodo, (state, payload) => ({ ...state, todoList: [...state.todoList, payload] }))
+  .case(todoActions.addTodo, (state, payload) => {
+    return { ...state, todoList: [...state.todoList, payload] };
+  })
   .case(todoActions.doneLoadingTodoList, (state, payload) => {
     return { ...state, todoList: payload.result };
   })

@@ -1,4 +1,5 @@
-import React, { useState, useEffect, ChangeEvent } from 'react';
+import React, { Fragment, useState, useEffect, ChangeEvent } from 'react';
+import Checkbox from './Checkbox';
 
 type Props = {
   count: number;
@@ -14,14 +15,15 @@ const Todo: React.FC<Props> = (props) => {
   useEffect(() => { initialize() }, [initialize]); 
 
   return (
-    <div>
+    <Fragment>
       <p>Todoの個数: {count}</p>
       <input type="text" onChange={(e: ChangeEvent<HTMLInputElement>) => setTodo(e.target.value)} />
       <button onClick={() => addTodo(todo)}>追加</button>
       <ul>
         {todoList.map((t: string, i: number) => <li key={i}>{t}</li>)}
       </ul>
-    </div>
+      <Checkbox />
+    </Fragment>
   );
 };
 
