@@ -1,7 +1,7 @@
 import React from 'react';
-import Styled from 'styled-components';
+import styled from 'styled-components';
 
-const StyledCheckbox = Styled.input`
+const StyledCheckbox = styled.input`
   margin: 200px;
 `;
 

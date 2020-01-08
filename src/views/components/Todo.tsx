@@ -1,4 +1,5 @@
 import React, { Fragment, useState, useEffect, ChangeEvent } from 'react';
+import Textarea from './Textarea';
 import Checkbox from './Checkbox';
 
 type Props = {
@@ -23,6 +24,7 @@ const Todo: React.FC<Props> = (props) => {
         {todoList.map((t: string, i: number) => <li key={i}>{t}</li>)}
       </ul>
       <Checkbox />
+      <Textarea value="aaa" />
     </Fragment>
   );
 };
